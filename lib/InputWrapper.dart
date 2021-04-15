@@ -19,7 +19,7 @@ class InputWrapper extends StatelessWidget {
             child: InputField(),
           ),
           SizedBox(height: 40,),
-          Text("Forgot Password?",
+          Text("Esqueceu sua Senha?",
             style: TextStyle(color: Colors.grey),
           ),
           SizedBox(height: 40,),
