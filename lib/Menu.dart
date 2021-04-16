@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
-
+import 'package:loginapp/AlphabetGame.dart';
+import "NumbersList.dart";
 class MenuRoute extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -20,7 +22,7 @@ class MenuRoute extends StatelessWidget {
               width: 200.0,
               height: 80.0,
               child: ElevatedButton(
-                child: Text("Jogo do Alfabeto",style: TextStyle(
+                child: Text("Letras do Alfabeto",style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
                     fontWeight: FontWeight.bold
@@ -28,7 +30,7 @@ class MenuRoute extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuRoute()),
+                    MaterialPageRoute(builder: (context) => MyHomePage()),
                   );
                 },
               ),
@@ -39,7 +41,7 @@ class MenuRoute extends StatelessWidget {
               width: 200.0,
               height: 80.0,
               child: ElevatedButton(
-                child: Text("Jogo dos Números",style: TextStyle(
+                child: Text("Números 1-20",style: TextStyle(
                     color: Colors.white,
                     fontSize: 15,
                     fontWeight: FontWeight.bold
@@ -47,7 +49,7 @@ class MenuRoute extends StatelessWidget {
                 onPressed: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => MenuRoute()),
+                    MaterialPageRoute(builder: (context) => NumbersList()),
                   );
                 },
               ),
